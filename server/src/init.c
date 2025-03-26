@@ -45,11 +45,11 @@ void start_init_packet_data(struct _packet* __restrict pac, struct _server* __re
 void start_init_server(struct _server* server)
 {
 
-	//LOG("enter network interface: ");
-	//scanf("%s", server->interface);
+	LOG("enter network interface: ");
+	scanf("%s", server->interface);
 	
 	
-	strncpy(server->interface, "wlp0s20f3", IFNAMSIZ);
+	//strncpy(server->interface, "wlp0s20f3", IFNAMSIZ);
 	server->start_device_count = 	CLIENTS;
 	server->max_online_client = 	CLIENTS;
 	server->max_my_online_client =	CLIENTS;
